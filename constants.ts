@@ -1,5 +1,4 @@
 import type { ProfileState, Theme, Font, StyleOption } from './types';
-import { InstagramIcon, XIcon, PatreonIcon, YoutubeIcon, TwitchIcon, DiscordIcon, GithubIcon, TiktokIcon, SpotifyIcon, LinkIcon } from './components/icons';
 
 export const THEMES: Theme[] = [
   { id: 'solid-purple', name: 'Solid Purple', classes: 'bg-purple-900' },
@@ -82,18 +81,9 @@ export const LINK_BACKGROUNDS: StyleOption[] = [
     { id: 'right-cut', name: 'Right Cut', class: 'rounded-l-full', preview: 'w-full h-8 bg-gray-500 rounded-l-full' },
 ];
 
-export const SOCIAL_ICONS: { [key: string]: React.FC<React.SVGProps<SVGSVGElement>> } = {
-  Instagram: InstagramIcon,
-  X: XIcon,
-  Patreon: PatreonIcon,
-  Youtube: YoutubeIcon,
-  Twitch: TwitchIcon,
-  Discord: DiscordIcon,
-  Github: GithubIcon,
-  Tiktok: TiktokIcon,
-  Spotify: SpotifyIcon,
-  Link: LinkIcon
-};
+export const SOCIAL_ICON_NAMES = [
+  'Instagram', 'X', 'Patreon', 'Youtube', 'Twitch', 'Discord', 'Github', 'Tiktok', 'Spotify', 'Link'
+];
 
 export const INITIAL_STATE: ProfileState = {
   profilePicture: 'https://picsum.photos/256/256',
