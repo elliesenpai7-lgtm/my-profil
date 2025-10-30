@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Profile Link Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Bungee+Inline&family=Bruno+Ace+SC&family=Chakra+Petch:wght@700&family=Codystar&family=Dancing+Script:wght@400..700&family=Exo+2&family=Geo&family=Great+Vibes&family=Lobster&family=Major+Mono+Display&family=Megrim&family=Monoton&family=Nova+Square&family=Orbitron:wght@400;700&family=Pacifico&family=Press+Start+2P&family=Righteous&family=Russo+One&family=Sacramento&family=Syncopate:wght@700&family=Turret+Road&family=VT323&family=Wallpoet&display=swap" rel="stylesheet">
+    <style>
+      /* Custom Font Families */
+      .font-orbitron { font-family: 'Orbitron', sans-serif; }
+      .font-press-start { font-family: '"Press Start 2P"', cursive; }
+      .font-audiowide { font-family: 'Audiowide', cursive; }
+      .font-righteous { font-family: 'Righteous', cursive; }
+      .font-major-mono { font-family: '"Major Mono Display"', monospace; }
+      .font-megrim { font-family: 'Megrim', cursive; }
+      .font-geo { font-family: 'Geo', sans-serif; }
+      .font-syncopate { font-family: 'Syncopate', sans-serif; }
+      .font-chakra-petch { font-family: '"Chakra Petch"', sans-serif; }
+      .font-bungee-inline { font-family: '"Bungee Inline"', cursive; }
+      .font-monoton { font-family: 'Monoton', cursive; }
+      .font-nova-square { font-family: '"Nova Square"', cursive; }
+      .font-vt323 { font-family: 'VT323', monospace; }
+      .font-russo-one { font-family: '"Russo One"', sans-serif; }
+      .font-exo-2 { font-family: '"Exo 2"', sans-serif; }
+      .font-turret-road { font-family: '"Turret Road"', cursive; }
+      .font-wallpoet { font-family: 'Wallpoet', cursive; }
+      .font-black-ops-one { font-family: '"Black Ops One"', cursive; }
+      .font-bruno-ace-sc { font-family: '"Bruno Ace SC"', cursive; }
+      .font-codystar { font-family: 'Codystar', cursive; }
+      .font-dancing-script { font-family: '"Dancing Script"', cursive; }
+      .font-pacifico { font-family: 'Pacifico', cursive; }
+      .font-great-vibes { font-family: '"Great Vibes"', cursive; }
+      .font-lobster { font-family: 'Lobster', cursive; }
+      .font-sacramento { font-family: 'Sacramento', cursive; }
+
+      .editor-panel-glow {
+        border: 2px solid #374151;
+        border-left: 4px solid #0891b2;
+        box-shadow: none;
+      }
+
+      .background-video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -10;
+        object-fit: cover;
+      }
+
+      @keyframes animated-gradient-border {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      .border-rgb-flow {
+        background: linear-gradient(90deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        background-size: 200% 200%;
+        animation: animated-gradient-border 3s ease infinite;
+      }
+      
+      .text-stroke-black {
+        -webkit-text-stroke: 1px black;
+        paint-order: stroke fill;
+      }
+
+      .text-stroke-white {
+        -webkit-text-stroke: 1px white;
+        paint-order: stroke fill;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
