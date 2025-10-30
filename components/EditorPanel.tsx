@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import type { ProfileState, Link } from '../types';
-import { THEMES, FONTS, FONT_STYLES, BORDER_STYLES, LINK_BACKGROUNDS, SOCIAL_ICONS } from '../constants';
+import { THEMES, FONTS, FONT_STYLES, BORDER_STYLES, LINK_BACKGROUNDS, SOCIAL_ICON_NAMES } from '../constants';
 import { PlusIcon, TrashIcon } from './icons';
 
 interface EditorPanelProps {
@@ -208,7 +208,7 @@ const EditorPanel: React.FC<EditorPanelProps> = ({ profile, setProfile, onClose,
                   </div>
                   <Input label="Title" value={link.title} onChange={(e) => handleLinkChange(link.id, 'title', e.target.value)} />
                   <Input label="URL" value={link.url} onChange={(e) => handleLinkChange(link.id, 'url', e.target.value)} />
-                  <Select label="Icon" value={link.icon} onChange={(e) => handleLinkChange(link.id, 'icon', e.target.value)} options={Object.keys(SOCIAL_ICONS).map(name => ({id: name, name}))} />
+                  <Select label="Icon" value={link.icon} onChange={(e) => handleLinkChange(link.id, 'icon', e.target.value)} options={SOCIAL_ICON_NAMES.map(name => ({id: name, name}))} />
                   <Select label="Icon Style" value={link.iconStyle} onChange={(e) => handleLinkChange(link.id, 'iconStyle', e.target.value)} options={FONT_STYLES} />
                   <Select label="Background Style" value={link.backgroundStyle} onChange={(e) => handleLinkChange(link.id, 'backgroundStyle', e.target.value)} options={LINK_BACKGROUNDS} />
                   <Select label="Border Style" value={link.borderStyle} onChange={(e) => handleLinkChange(link.id, 'borderStyle', e.target.value)} options={BORDER_STYLES.map(s => ({id: s.id, name:s.name}))} />
