@@ -1,6 +1,20 @@
 import React from 'react';
 import type { Link } from '../types';
-import { SOCIAL_ICONS, FONT_STYLES, LINK_BACKGROUNDS, BORDER_STYLES } from '../constants';
+import { FONT_STYLES, LINK_BACKGROUNDS, BORDER_STYLES } from '../constants';
+import { InstagramIcon, XIcon, PatreonIcon, YoutubeIcon, TwitchIcon, DiscordIcon, GithubIcon, TiktokIcon, SpotifyIcon, LinkIcon } from './icons';
+
+const SOCIAL_ICONS: { [key: string]: React.FC<React.SVGProps<SVGSVGElement>> } = {
+  Instagram: InstagramIcon,
+  X: XIcon,
+  Patreon: PatreonIcon,
+  Youtube: YoutubeIcon,
+  Twitch: TwitchIcon,
+  Discord: DiscordIcon,
+  Github: GithubIcon,
+  Tiktok: TiktokIcon,
+  Spotify: SpotifyIcon,
+  Link: LinkIcon
+};
 
 interface LinkCardProps {
   link: Link;
@@ -35,5 +49,3 @@ const LinkCard: React.FC<LinkCardProps> = ({ link, fontClass }) => {
     </a>
   );
 };
-
-export default LinkCard;
